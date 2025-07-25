@@ -14,5 +14,5 @@ menu "Example configuration"
             grounded), which is the default, and ends at `0x27`. See "3.3.1
             ADDRESSING I2C DEVICES (MCP23017)" in the datasheet.
 
-    rsource "../../../../devtools/Kconfig.i2c"
+    rsource "../../../Kconfig.i2c"
 endmenu
