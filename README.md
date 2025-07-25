@@ -11,7 +11,7 @@ Driver for I2C/SPI 16 bit GPIO expanders MCP23017/MCP23S17.
 ## Installation
 
 ```sh
-idf.py add-dependency "esp-idf-lib/mcp23x17^1.1.2
+idf.py add-dependency esp-idf-lib/mcp23x17^1.1.2
 ```
 
 ## Support
