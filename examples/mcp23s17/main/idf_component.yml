@@ -9,25 +9,3 @@ dependencies:
     version: "*"
   esp-idf-lib/esp_idf_lib_helpers:
     version: "*"
----
-version: 1.0.0
-description: mcp23017
-dependencies:
-  esp-idf-lib/mcp23x17:
-    version: "*"
-    override_path: "../../../"
-  esp-idf-lib/i2cdev:
-    version: "*"
-  esp-idf-lib/esp_idf_lib_helpers:
-    version: "*"
----
-version: 1.0.0
-description: mcp23s17
-dependencies:
-  esp-idf-lib/mcp23x17:
-    version: "*"
-    override_path: "../../../"
-  esp-idf-lib/i2cdev:
-    version: "*"
-  esp-idf-lib/esp_idf_lib_helpers:
-    version: "*"
