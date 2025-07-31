@@ -66,9 +66,9 @@ typedef struct
     spi_device_handle_t spi_dev;
     uint8_t addr;
     bool use_software_cs; //!< Use software CS control instead of hardware.
-                          //!< Whether to use a software Chip Select (CS) line instead of the hardware
-                          //!< one. This is useful when multiple MCP23S17 chips are sharing the same CS
-                          //!< line on the SPI bus.
+    //!< Whether to use a software Chip Select (CS) line instead of the hardware
+    //!< one. This is useful when multiple MCP23S17 chips are sharing the same CS
+    //!< line on the SPI bus.
     gpio_port_t cs_pin;   //!< GPIO pin number for CS.
 } mcp23x17_t;
 

@@ -22,14 +22,15 @@ static void intr_handler(void *arg)
 void test(void *pvParameters)
 {
     // Configure SPI bus
-    spi_bus_config_t cfg = {
-       .mosi_io_num = CONFIG_EXAMPLE_MOSI_GPIO,
-       .miso_io_num = CONFIG_EXAMPLE_MISO_GPIO,
-       .sclk_io_num = CONFIG_EXAMPLE_SCLK_GPIO,
-       .quadwp_io_num = -1,
-       .quadhd_io_num = -1,
-       .max_transfer_sz = 0,
-       .flags = 0
+    spi_bus_config_t cfg =
+    {
+        .mosi_io_num = CONFIG_EXAMPLE_MOSI_GPIO,
+        .miso_io_num = CONFIG_EXAMPLE_MISO_GPIO,
+        .sclk_io_num = CONFIG_EXAMPLE_SCLK_GPIO,
+        .quadwp_io_num = -1,
+        .quadhd_io_num = -1,
+        .max_transfer_sz = 0,
+        .flags = 0
     };
     ESP_ERROR_CHECK(spi_bus_initialize(HOST, &cfg, 1));
     ESP_ERROR_CHECK(mcp23x17_init_desc_spi(&dev, HOST, MCP23X17_MAX_SPI_FREQ, CONFIG_EXAMPLE_ADDRESS, CONFIG_EXAMPLE_CS_GPIO));
