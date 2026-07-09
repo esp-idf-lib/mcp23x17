@@ -1,7 +1,7 @@
 ---
 version: 1.2.0
 description: Driver for I2C/SPI 16 bit GPIO expanders MCP23017/MCP23S17
-license: BSD-3
+license: BSD-3-Clause
 targets:
   - esp32
   - esp32c2
